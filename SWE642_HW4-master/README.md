@@ -1,6 +1,6 @@
 # SWE 642 : Software Engineering for the World Wide Web
 
-### Name : Jinal, Justin, Manaff, Lohith
+### Team Name : Jinal, Justin, Lohith, Manaff
 
 ### Homework 4:
 
