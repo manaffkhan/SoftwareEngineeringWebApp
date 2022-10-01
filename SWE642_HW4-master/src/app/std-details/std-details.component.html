@@ -1,0 +1,40 @@
+
+<h2>Student Detail</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Student ID</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Date of submission</th>
+      <th>Likes about college</th>
+      <th>Interested</th>
+      <th>Recommend</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="studentDetails!=undefined">
+      <td>{{studentDetails.id}}</td>
+      <td>{{studentDetails.name}}</td>
+      <td>{{studentDetails.lastname}}</td>
+      <td>{{studentDetails.address}}</td>
+      <td>{{studentDetails.city}}</td>
+      <td>{{studentDetails.state}}</td>
+      <td>{{studentDetails.zip}}</td>
+      <td>{{studentDetails.phone}}</td>
+      <td>{{studentDetails.email}}</td>
+      <td>{{studentDetails.dos}}</td>
+      <td>{{studentDetails.about_college}}</td>
+      <td>{{studentDetails.interested}}</td>
+      <td>{{studentDetails.recommend}}</td>
+      
+   </tr>
+  </tbody>
+</table>

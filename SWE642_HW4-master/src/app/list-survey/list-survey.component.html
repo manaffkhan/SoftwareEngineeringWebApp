@@ -1,0 +1,39 @@
+      <h2>Previous responses</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Date of submission</th>
+            <th>Likes about college</th>
+            <th>Interested</th>
+            <th>Recommend</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students | async">
+            <td><a [routerLink]="['/stdDetail', student.id]">{{student.id}}</a></td>
+            <td>{{student.name}}</td>
+            <td>{{student.lastname}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.city}}</td>
+            <td>{{student.state}}</td>
+            <td>{{student.zip}}</td>
+            <td>{{student.phone}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.dos}}</td>
+            <td>{{student.about_college}}</td>
+            <td>{{student.interested}}</td>
+            <td>{{student.recommend}}</td>
+            
+         </tr>
+        </tbody>
+      </table>
